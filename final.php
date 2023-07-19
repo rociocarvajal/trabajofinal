@@ -1,5 +1,6 @@
 <?php
 
+
 // Funcion que carga datos a un array.
 
  function dataGame(){
