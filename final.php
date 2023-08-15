@@ -306,7 +306,7 @@ function mesesOrdenados($games){
     $monthname = $tickets[$i]["mes"];
     $monto = $tickets[$i]["monto"];
     echo "<$monthname>\n";
-    echo "Juego con mayor monto de ventas: $newname\n";
+    echo "Nombre del juego: $newname\n";
     echo "Precio de ticket: $$newprice\n";
     echo "Tickets vendidos: $newCant\n";
     echo "Venta total del mes: $$monto\n";
