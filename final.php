@@ -1,271 +1,298 @@
 <?php
 
 /**
- *  Funcion que carga datos a un array.
+ *  Estructura de datos en el que cada elemento contiene el monto total de ventas de games de cada mes
  *  @return array $games
 */
 
  function dataGame(){
  
     $games[0] = array (
-        "juego" => 'Mario Bross',
-        "precioTicket" => 150,
-        "cantTickets" => 36
+        "game" => 'Super Mario Bross',
+        "ficha" => 150,
+        "nFichas" => 36,
+        "month" => 'enero'
     );
     $games[1] = array (
-        "juego" => 'Tetris',
-        "precioTicket" => 160,
-        "cantTickets" => 69
+        "game" => 'Tetris',
+        "ficha" => 160,
+        "nFichas" => 69,
+        "month" => 'febrero'
     );
     $games[2] = array (
-        "juego" => 'Donkey Kong',
-        "precioTicket" => 140,
-        "cantTickets" => 93
+        "game" => 'Donkey-Kong',
+        "ficha" => 140,
+        "nFichas" => 93,
+        "month" => 'marzo'
     );
     $games[3] = array (
-        "juego" => 'Pac-Man',
-        "precioTicket" => 133,
-        "cantTickets" => 36
+        "game" => 'Pac-Man',
+        "ficha" => 133,
+        "nFichas" => 36,
+        "month" => 'abril'
     );
     $games[4] = array (
-        "juego" => 'Mortal-Kombat',
-        "precioTicket" => 100,
-        "cantTickets" => 69
+        "game" => 'Mortal-Kombat',
+        "ficha" => 100,
+        "nFichas" => 69,
+        "month" => 'mayo'
     );
     $games[5] = array (
-        "juego" => 'Calesita',
-        "precioTicket" => 333,
-        "cantTickets" => 25
+        "game" => 'Sonic',
+        "ficha" => 333,
+        "nFichas" => 25,
+        "month" => 'junio'
     );
     $games[6] = array (
-        "juego" => 'Montaña Rusa',
-        "precioTicket" => 400,
-        "cantTickets" => 77
+        "game" => 'Asteroids',
+        "ficha" => 400,
+        "nFichas" => 77,
+        "month" => 'julio'
     );
     $games[7] = array (
-        "juego" => 'Autitos Chocadores',
-        "precioTicket" => 500,
-        "cantTickets" => 100
+        "game" => 'Final fight',
+        "ficha" => 500,
+        "nFichas" => 100,
+        "month" => 'agosto'
     );
     $games[8] = array (
-        "juego" => 'Pelotero',
-        "precioTicket" => 110,
-        "cantTickets" => 45
+        "game" => 'Puzzle Bobble',
+        "ficha" => 110,
+        "nFichas" => 45,
+        "month" => 'septiembre'
     );
     $games[9] = array (
-        "juego" => 'Sillas voladoras',
-        "precioTicket" => 1000,
-        "cantTickets" => 60
+        "game" => '1942',
+        "ficha" => 1000,
+        "nFichas" => 60,
+        "month" => 'octubre'
     );
     $games[10] = array (
-        "juego" => 'Barco',
-        "precioTicket" => 1500,
-        "cantTickets" => 36
+        "game" => 'Circus',
+        "ficha" => 1500,
+        "nFichas" => 36,
+        "month" => 'noviembre'
     );
     $games[11] = array (
-        "juego" => 'Gusano Loco',
-        "precioTicket" => 369,
-        "cantTickets" => 39
+        "game" => 'Island Adventures',
+        "ficha" => 369,
+        "nFichas" => 39,
+        "month" => 'diciembre'
     );
     return $games;
 }
 
 /**
- * Funcion que carga array con meses y monto
+ * Funcion que dado un string que represente el mes, devuelve el indice de este
  * @param array $games
- * @return array $tickets
- */ 
-
-function montoMensual ($games){
-    $tickets[0] = array (
-        "mes" => 'enero',
-        "monto" => $games[0]["precioTicket"] * $games[0]["cantTickets"]
-    );
-    $tickets[1] = array (
-        "mes" => 'febrero',
-        "monto" => $games[1]["precioTicket"] * $games[1]["cantTickets"]
-    );
-    $tickets[2] = array (
-        "mes" => 'marzo',
-        "monto" => $games[2]["precioTicket"] * $games[2]["cantTickets"]
-    );
-    $tickets[3] = array (
-        "mes" => 'abril',
-        "monto" => $games[3]["precioTicket"] * $games[3]["cantTickets"]
-    );
-    $tickets[4] = array (
-        "mes" => 'mayo',
-        "monto" => $games[4]["precioTicket"] * $games[4]["cantTickets"]
-    );
-    $tickets[5] = array (
-        "mes" => 'junio',
-        "monto" => $games[5]["precioTicket"] * $games[5]["cantTickets"]
-    );
-    $tickets[6] = array (
-        "mes" => 'julio',
-        "monto" => $games[6]["precioTicket"] * $games[6]["cantTickets"]
-    );
-    $tickets[7] = array (
-        "mes" => 'agosto',
-        "monto" => $games[7]["precioTicket"] * $games[7]["cantTickets"]
-    );
-    $tickets[8] = array (
-        "mes" => 'septiembre',
-        "monto" => $games[8]["precioTicket"] * $games[8]["cantTickets"]   
-    );
-    $tickets[9] = array (
-        "mes" => 'octubre',
-        "monto" => $games[9]["precioTicket"] * $games[9]["cantTickets"]
-    );
-    $tickets[10] = array (
-        "mes" => 'noviembre',
-        "monto" => $games[10]["precioTicket"] * $games[10]["cantTickets"]
-    );
-    $tickets[11] = array (
-        "mes" => 'diciembre',
-        "monto" => $games[11]["precioTicket"] * $games[11]["cantTickets"]
-    );
-    return $tickets;
-}
-
-/**
- * Funcion que segun el nombre del mes, devuelve el indice de este.
- * @param array $tickets
- * @param string $mes
- * @return int $index
+ * @param string $name
+ * @return int
  */
 
-function numberIndex($tickets, $mes) {
-    $n = count($tickets);
-    $index = 0;
-    $found = false;
-    while ($index < $n && $found == false) {
-        if ($tickets[$index]["mes"] == $mes) {
-            $index = $index;
-            $found = true;
-        } else {
-            $index++;
-        }    
-    } return $index;
-}
-
-/**
- * Funcion que segun el indice del mes, retorne el nombre de este
- * @param array $tickets
- * @param int $index
- * @return string $namemonth 
- */
-
-function nameMonth($tickets, $index) {
-    $namemonth = $tickets[$index]["mes"];
-    return $namemonth;
-}
-
-/**
- * Función que valida el nombre del mes
- * @param array $tickets
- * @param string $mes
- * @return int $n
- */
-
-function validarMes($tickets, $mes) {
-    $n = 0;
-    for ($i=0; $i < 12 ; $i++) { 
-        if ($tickets[$i]["mes"] == $mes) {
-            $n = $n + 150;
-        } else {
-            $n = $n + 1;
+ function recuperarIndice($games, $name) {
+    foreach ($games as $indice => $game) {
+        if ($games[$indice]["month"] == $name) {
+            $nuevoindice = $indice;
         }
     }
-    return $n;   
-}
+    return $nuevoindice;
+ }
+
+ /** 
+  * Funcion que dado un numero entre 0 y 11, devuelva el nombre del mes que representa
+  * @param array $games
+  * @param int $indice
+  * @return string
+  */
+
+  function recuperarName ($games, $indice) {
+    $nombreMes = $games[$indice]["month"];
+    return $nombreMes;
+  }
 
 /**
- * Funcion para solicitar mes y validarlo
- * @param array $tickets
- * @return int $indice
+ * Estructura de arreglos asociativos que solo almacena al juego con mayor ventas del mes
+ * @param array $games
+ * @return array
  */
 
- function solicitarMes ($tickets) {
-    echo "Ingrese nombre del mes: ";
-    $mes = trim(fgets(STDIN));
-    $mes = strtolower($mes);
-    $n = validarMes($tickets, $mes);
-    if ($n > 100) {
-        echo "Mes valido.\n";
-        $indice = numberIndex($tickets, $mes);
+ function mayorVenta ($games) {
+    $montoA = 1;
+    $i = 0;
+    $found = false;
+    for ($i=0; $i < count($games); $i++) { 
+        $montoB = $games[$i]["ficha"] * $games[$i]["nFichas"];
+        if ($montoA < $montoB) {
+            $montoA = $montoB;
+            $asociativo = $games[$i];
+        }
+    }
+    return $asociativo;
+ }
+
+ /**
+  * Funcion que solicita mes hasta que sea valido
+  * @param array $games
+  * @return int
+  */
+
+  function solicitarMes ($games) {
+    $newIndex = 0;
+    $found = false;
+    do {
+        echo "Ingrese nombre de mes valido: ";
+        $inputName = trim(fgets(STDIN));
+        $inputName = strtolower($inputName);
+        $i = 0;
+        foreach ($games as $game) {
+            if ($games[$i]["month"] == $inputName) {
+                $newIndex = $i;
+                $found = true;
+            }
+            else {
+                $newIndex = -1;
+                $i++;
+            }
+        }
+    } while ($found == false);
+    return $newIndex;
+  }
+
+ /** 
+  * Funcion menú de opciones
+  * @return int
+  */
+
+  function menu () {
+    $found = false;
+    while ($found == false) {
+        echo "Bienvendo al menú de opciones!\n";
+        echo "1) Ingrese una venta.\n";
+        echo "2) Mes con mayor monto de ventas.\n";
+        echo "3) Primer mes que supera un monto de ventas.\n";
+        echo "4) Información de un mes.\n";
+        echo "5) Juegos más vendidos ordenados.\n";
+        echo "0) Salir del menú.\n";
+        echo "Ingrese su opcion: ";
+        $option = trim(fgets(STDIN));
+        if ($option >= 0 && $option <= 5) {
+            $found = true;
+        }
+        else {
+            echo "Opción invalida, intentelo nuevamente.\n";
+        }
+    }
+    return $option;
+  }
+
+  /** 
+   * Funcion mostrar data
+   * @param array $games 
+   * @param int $index
+   */
+
+   function mostrarData ($games, $index) {
+    $namemonth = $games[$index]["month"];
+    $namegame = $games[$index]["game"];
+    $fichas = $games[$index]["ficha"];
+    $nfichas = $games[$index]["nFichas"];
+    $montoTotal = $fichas * $nfichas;
+    echo "<$namemonth>\n";
+    echo "Game: $namegame.\n";
+    echo "Precio fichas: $$fichas.\n";
+    echo "Fichas vendidas: $nfichas.\n";
+    echo "Monto total: $$montoTotal.\n";
+   } 
+
+  /**
+   * Funcionalidad opcion 1
+   * @param array $games
+   * @return array
+   */
+  
+    function opcion1 ($games) {
+    echo "Ha seleccionado la opcion de ingresar una venta.\n";
+    $indice = solicitarMes($games);
+    $nameMonth = $games[$indice]["month"];
+    echo "Ingrese nombre del juego: ";
+    $game = trim(fgets(STDIN));
+    echo "Ingrese el precio de la ficha: $";
+    $ficha = trim(fgets(STDIN));
+    echo "Ingrese cantidad de fichas vendidas: ";
+    $nFichas = trim(fgets(STDIN));
+    $newMonto = $ficha * $nFichas;
+    $oldMonto = $games[$indice]['ficha']*$games[$indice]['nFichas'];
+    $ficha = $games[$indice]['ficha'] + $ficha;
+    $nFichas = $games[$indice]['nFichas'] + $nFichas;
+    $games[$indice]['ficha'] = $ficha;
+    $games[$indice]['nFichas'] = $nFichas;
+    $newDato = array (
+        "game" => $game,
+        "ficha" => $ficha,
+        "nFichas" => $nFichas,
+        "month" => $nameMonth
+    );
+    if ($newMonto > $oldMonto) {
+        $games[$indice] = $newDato;
+        echo "Datos actualizados.\n";
     }
     else {
-        echo "Mes invalido, ingresar correctamente los datos.\n";
-        $indice = -1;
+        $games = $games;
     }
-    return $indice;
-}
-
-/**
- * Funcion que muestra menu
- * @return int $option
- */
-
-function menu() {
-    echo "1) Ingrese una venta.\n";
-    echo "2) Mes con mayor monto de ventas.\n";
-    echo "3) Primer mes que supera un monto de ventas.\n";
-    echo "4) Información de un mes.\n";
-    echo "5) Juegos más vendidos ordenados.\n";
-    echo "0) Salir del menú.\n";
-    echo "Ingrese su opcion: ";
-    $option = trim(fgets(STDIN));
-    return $option;
-}
-
-/**
- * Funcion que actualiza los datos
- * @param array $games
- * @param int $index
- * @param string $namegame
- * @param float $precio
- * @param int $ntickets
- * @return array $games
- */
-
-function actulizarDatos ($games, $index, $namegame, $precio, $ntickets) {
-    $newGame[$index] = array (
-        "juego" => $namegame,
-        "precioTicket" => $precio,
-        "cantTickets" => $ntickets
-    );
-    $games[$index] = $newGame[$index];
-    echo "Datos actualizados. \n";
     return $games;
-}
+  }
 
-/**
- * Funcion que actualiza el monto 
- * @param array $tickets
- * @param int $index
- * @param string $namemonth
- * @param float $monto
- * @return array $tickets
- */
+  /** 
+   * Funcionalidad opcion 3
+   * @param array $games
+   * @return int
+   */
 
-function montoActualizado($tickets, $index, $namemonth, $montototal) {
-    $newticket[$index] = array (
-        "mes" => $namemonth,
-        "monto" => $montototal
-    );
-    $tickets[$index] = $newticket[$index];
-    return $tickets;
-}
+    function option3 ($games) {
+    echo "Ingrese un monto a superar: ";
+    $montoInput = trim(fgets(STDIN));
+    $found = false;
+    $i = 0;
+    while ($found == false && $i <= 11) {
+        if ($montoInput < $games[$i]["ficha"]*$games[$i]["nFichas"]) {
+            $encontrado = $i;
+            $found = true;
+        }
+        else {
+            $i++;
+            $encontrado = -1;
+        }
+    }
+    return $encontrado;
+  }
 
-function juegosOrdenados($a, $b) {
-    if($a['cantTickets']*$a['precioTicket'] == $b['cantTickets']*$b['precioTicket']){
+  /** 
+   * Funcionalidad opcion 4
+   * @param array $games
+   */
+
+
+  function option4 ($games) {
+    echo "Ingrese nombre de mes para imprimir información.\n";
+    $indice = solicitarMes($games);
+    mostrarData($games, $indice);
+  } 
+  
+  /** 
+   * Funcionalidad opcion 5
+   */
+
+   function juegosOrdenados($a, $b) {
+    if($a['nFichas']*$a['ficha'] == $b['nFichas']*$b['ficha']){
         return 0;
     }
-    return ($a['cantTickets'] * $a['precioTicket'] < $b['cantTickets'] * $b['precioTicket']) ? -1 : 1;
+    return ($a['nFichas'] * $a['ficha'] < $b['nFichas'] * $b['ficha']) ? -1 : 1;
 }
 
-// Funcion que ordena array
+/**
+ * Funcion que ordena array
+ * @param array $games
+ */
 
 function mesesOrdenados($games){
     uasort($games, 'juegosOrdenados');
@@ -273,121 +300,34 @@ function mesesOrdenados($games){
     /**la función  print_r() se utiliza para mostrar información sobre una variable de una manera legible para los humanos. Imprime estructuras de datos complejas, como arrays y objetos, de forma que se puedan examinar fácilmente.*/
 }
 
-/**
- * Funcion que retorna indice cuando encuentra el mayor monto de venta
- * @param array $tickets
- * @return int $newindex
- */
-
- function mayorMontoVenta($tickets) {
-    $newindex = 0;
-    $montoA = $tickets[0]["monto"];
-    for ($i=0; $i < 12; $i++) { 
-        if ($montoA < $tickets[$i]["monto"]) {
-            $montoA = $tickets[$i]["monto"]; 
-            $newname = $tickets[$i]["mes"];
+ /** Programa principal */
+ //Cargo estructura de datos
+ $datos = dataGame();
+ $mayorMonto = mayorVenta($datos);
+ do {
+    $optionMenu = menu();
+    if ($optionMenu == 1) {
+       $datos = opcion1($datos);
+    }
+    elseif ($optionMenu == 2) {
+       $mayor = mayorVenta($datos);
+       $name = $mayor["month"];
+       $indice = recuperarIndice($datos, $name);
+       mostrarData($datos, $indice);
+    }
+    elseif ($optionMenu == 3) {
+        $number = option3($datos);
+        if ($number != -1) {
+            mostrarData($datos, $number);   
+        }
+        else {
+            echo "No se ha encontrado un monto superior al input ingresado en la base de datos.\n";
         }
     }
-    $newindex = numberIndex($tickets, $newname);
-    return $newindex;
- }
-
-/**
- * Funcion que segun el indice, me muestre los datos de determinado mes, con la informacion completa
- * @param array $games
- * @param array $tickets
- * @param int $i
- */
-
- function mostrarData($games, $tickets, $i) {
-    $newname = $games[$i]["juego"];
-    $newprice = $games[$i]["precioTicket"];
-    $newCant = $games[$i]["cantTickets"];
-    $monthname = $tickets[$i]["mes"];
-    $monto = $tickets[$i]["monto"];
-    echo "<$monthname>\n";
-    echo "Nombre del juego: $newname\n";
-    echo "Precio de ticket: $$newprice\n";
-    echo "Tickets vendidos: $newCant\n";
-    echo "Venta total del mes: $$monto\n";
- }
-
- /** 
-  * Funcion que supere el monto ingresado o -1 si no lo encuentra
-  * @param array $tickets
-  * @return int $numberindex
- */
-
- function esMayor ($tickets) {
-    echo "Ingrese un monto: $";
-    $monto = trim(fgets(STDIN));
-    $i = 0;
-    $encontrado = false;
-    while ($encontrado == false && $i < 12) {
-        if ($monto < $tickets[$i]["monto"]) {
-            $nombreMes = $tickets[$i]["mes"];
-            $encontrado = true;
-            $numberindex = numberIndex($tickets, $nombreMes);
-        } else {
-            $i++;
-            $numberindex = -1;
-        }
+    elseif ($optionMenu == 4) {
+        option4($datos);
     }
-    return $numberindex;
- }
-
-//Programa principal.
-
-$dataGame = dataGame();
-$montoMensual = montoMensual($dataGame); 
-echo "Bienvenido al menu de parque de diversiones. \n";
-do {
-    $menuOption = menu();
-    if ($menuOption == 1) {
-       $index = solicitarMes($montoMensual);
-       if ($index != -1) {
-        echo "Ingrese información de la venta del juego.\n";
-        echo "Nombre del juego: ";
-        $nameGame = trim(fgets(STDIN));
-        echo "Ingrese precio del ticket: $";
-        $price = trim(fgets(STDIN));
-        echo "Ingrese cantidad de tickes vendidos: ";
-        $cantTickets = trim(fgets(STDIN));
-        $montoIngresado = $price * $cantTickets;
-        $montoPreCargado = $montoMensual[$index]["monto"];
-        $montoTotal = $montoIngresado + $montoPreCargado;
-        $nameMonth = nameMonth($montoMensual, $index);
-        if ($montoIngresado > $montoPreCargado) {
-            $dataGame = actulizarDatos($dataGame, $index, $nameGame, $price, $cantTickets);
-        } else {  
-            echo "Monto actualizado.\n";
-        }
-        $montoMensual = montoActualizado($montoMensual, $index, $nameMonth, $montoTotal);
-       }
-       else {
-        echo "Intentelo nuevamente cargando bien los datos.\n";
-       }
-    } 
-    elseif ($menuOption == 2) {
-        $indice = mayorMontoVenta($montoMensual);
-        mostrarData($dataGame, $montoMensual, $indice);
+    elseif ($optionMenu == 5) {
+        mesesOrdenados($datos);
     }
-    elseif ($menuOption == 3) {
-        $nuevoIndice = esMayor($montoMensual);
-        if ($nuevoIndice != -1) {
-            mostrarData($dataGame, $montoMensual, $nuevoIndice);
-        }
-    }
-    elseif ($menuOption == 4) {
-       $newIndex = solicitarMes($montoMensual);
-       if ($newIndex != -1) {
-        mostrarData($dataGame, $montoMensual, $newIndex);
-       }
-    }
-    elseif ($menuOption == 5) {
-        mesesOrdenados($dataGame);
-    }
-    elseif ($menuOption > 5 && $menuOption != 0) {
-        echo "Opcion invalida, intentelo nuevamente.\n";
-    }
-} while ($menuOption != 0);
+ } while ($optionMenu != 0);
